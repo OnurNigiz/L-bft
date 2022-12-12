@@ -25,7 +25,7 @@ clean:
 fclean:	clean
 	rm -f $(NAME)
 
-re:fclean $(NAME)
+re:	fclean $(NAME)
 
 norm:	
 	norminette *.[ch]
