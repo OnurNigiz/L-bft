@@ -25,18 +25,20 @@ char *ft_strrchr(const char *s, int c)
         while (s[pos] != (char)c && pos >= 0)
             pos--;
         if (s[pos] == (char)c)
+        {
             return ((char*)&s[pos]);
+        }
         else    
             return (NULL);
     }
     return (NULL);
 }
 
-int main()
+int main(void)
 {
-    const char *str = "OnurBirsu";
+    const char *str = "Makaveli";
 
-    printf("\n\nft_strrchr: %s\n", ft_strrchr(str, 117));
+    printf("\n\nft_strrchr: %s\n", ft_strrchr(str, 'B'));
     printf("strrchr: %s\n\n", strrchr(str, 'B'));
     
     return 0;

@@ -9,6 +9,8 @@
 /*   Updated: 2022/12/08 16:03:48 by onigiz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
+#include <stdlib.h>
 
 int	ft_atoi(const char *str)
 {
@@ -28,4 +30,12 @@ int	ft_atoi(const char *str)
 	while (*(str + i) >= '0' && *(str + i) <= '9')
 		num = num * 10 + (*(str + i++) - 48);
 	return (num * sign);
+}
+
+int main(void)
+{
+	const char *nbr = "                 -++123458kdfg23049emkfmkefk";
+
+	printf("ft_atoi: %d", ft_atoi(nbr));
+	printf("\natoi: %d", atoi(nbr));
 }

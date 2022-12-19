@@ -36,10 +36,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 int main()
 {
-    char *dst = "Onur";
-    const char *src = "Birsu";
+    char dst[] = "Kallavi";
+    const char src[] = "Onur";
 
-    printf("\nft_strlcpy: %ld", ft_strlcpy(dst, src, 5));
+    printf("\nft_strlcpy: %ld", ft_strlcpy(dst, src, 3));
     
 
     return (0);
