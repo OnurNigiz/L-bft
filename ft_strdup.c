@@ -21,9 +21,9 @@ char *ft_strdup(const char *s)
   char *copy = (char*)malloc(len + 1);
 
   // If malloc failed, return NULL
-  if (copy == NULL) {
+  if (copy == NULL) 
     return NULL;
-  }
+  
 
   // Copy the string into the allocated memory
   strcpy(copy, s);
