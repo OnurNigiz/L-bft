@@ -10,8 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
-void *calloc(size_t nmemb, size_t size) 
+void *ft_calloc(size_t nmemb, size_t size) 
 {
   // Calculate the total size of the memory block to be allocated
   size_t total_size = nmemb * size;
@@ -34,3 +36,18 @@ void *calloc(size_t nmemb, size_t size)
   // Return a pointer to the allocated and initialized memory block
   return (ptr);
 }
+
+/*
+int main()
+{
+  int *arr = (int*)ft_calloc(2, sizeof(int));
+
+  printf("%d\n", arr[0]);
+  
+
+  return 0;
+}
+
+
+We will see all the elements of array are 0.
+*/

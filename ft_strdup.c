@@ -12,7 +12,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-char *strdup(const char *s) 
+char *ft_strdup(const char *s) 
 {
   // Calculate the length of the string, not including the null terminator
   size_t len = strlen(s);
