@@ -9,10 +9,18 @@
 /*   Updated: 2022/12/08 14:44:36 by onigiz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
 
 int	ft_toupper(int c)
 {
 	if (c > 96 && c < 123)
 		return (c -32);
 	return (c);
+}
+
+int main()
+{
+	char a = 'b';
+
+	printf("%d", ft_toupper(a));	
 }

@@ -23,3 +23,12 @@ size_t	ft_strlen(const char *s)
 		len++;
 	return (len);
 }
+
+int main()
+{
+	int *arr = "onur12345";
+
+	printf("%ld\n", ft_strlen(arr));
+
+	return 0;
+}

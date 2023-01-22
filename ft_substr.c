@@ -15,14 +15,14 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     //If the start index is greater than str len, allocate empty string?
     if (start >= ft_strlen((char *)s))
         return (ft_strdup(""));
-    //Nextb lock means that if the len is greater than str u must cut it in the end when allocating
+    //Next block means that if the len is greater than str u must cut it in the end when allocating
     if (len > ft_strlen(s))
-		str = malloc(sizeof(char) * ft_strlen(s) + 1);
-	else
-		str = malloc(sizeof(char) * len + 1);
+		  str = malloc(sizeof(char) * ft_strlen(s) + 1);
+	  else
+		  str = malloc(sizeof(char) * len + 1);
     //Control for malloc alloc.
     if (!str)
-		return (0);
+		  return (0);
     while (s[start] && ++i <= len)
     {
         str[++strcounter] = (char)s[start];

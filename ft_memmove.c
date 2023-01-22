@@ -33,14 +33,3 @@ void *ft_memmove(void *dst, const void *src, size_t len)
         return (ft_memcpy(dst, src, len));
     return (dst);
 }
-
-int main(void)
-{
-    char *src = "Birsu";
-    char *dst = "Onur";
-    int len = 5;
-
-    printf("%s\n", ft_memmove(dst, src, len));
-    
-    return (0);
-}

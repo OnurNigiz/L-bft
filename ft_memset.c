@@ -29,6 +29,6 @@ int main(void)
 {
     char s[] = "Onur";
     ft_memset(s, 42 , 3);
-    printf("%d", strcmp(s, "Onur"));
+    printf("%d\n", strcmp(s, "Onur"));
 }
 
