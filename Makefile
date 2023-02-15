@@ -59,4 +59,5 @@ re:fclean $(NAME)
 
 norm:
 	norminette *.[ch]
+	
 .PHONY: clean fclean all re norm
