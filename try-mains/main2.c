@@ -146,11 +146,46 @@ int main()
 
 
 //This is a main for strlcpy
-
+/*
 int main()
 {
     char src[] = "Galatasaray";
     char dst[] = "Barcelona";
-    printf("%ld\n", ft_strlcpy(dst, src, 4));
+    printf("%ld\n", ft_strlcpy(dst, src, 25));
+    return 0;
+}sampiyon
+*/
+
+
+// This is a main for strlcat
+/*
+char dest[] = "Hello, "; ifadesi, sınırsız uzunlukta bir karakter dizisi başlatır. 
+Bu şekilde, dest karakter dizisi, "Hello, " karakter dizisiyle başlatılır ve boyutu belirtilmez. 
+C dilinde, bir karakter dizisi boyutu belirtilmediğinde, derleyici, dizinin boyutunu, başlangıç değeri ile belirler.
+Bu ifade, dest karakter dizisine ilk değeri atar ve boyutu otomatik olarak belirlenir. 
+Karakter dizisinin boyutu, içindeki karakterlerin sayısına eşit olacak şekilde ayarlanır. 
+Bu nedenle, bu ifade, sınırsız uzunlukta bir karakter dizisi başlatır. 
+Ancak, ft_strlcat() fonksiyonu gibi bir karakter dizisi işlevi kullanırken, her zaman hedef karakter dizisinin maksimum boyutunu belirtmek önemlidir.
+*/
+/*
+int main()
+{
+    char dst[] = "12345678";
+    char src[] = "12345678900";
+    printf("%ld\n", ft_strlcat(dst, src, sizeof(src)));
     return 0;
 }
+*/
+
+
+// This is a main for strnstr
+// eşleşen kelimenin ilk karakterinin adresini gösteren karakter dizisi (18. satır)
+/*
+int main()
+{
+    char haystack[] = "Bu sene sampiyon Galatasaray olacak";
+	char needle[] = "sampiyon";
+	printf("%s\n", ft_strnstr(haystack, needle, ft_strlen(haystack)));
+    return 0;
+}
+*/
