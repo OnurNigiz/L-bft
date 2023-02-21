@@ -33,6 +33,14 @@ int main()
 */
 
 // This is a main for ft_striteri
+/* Dereferans operatörü, bellekteki bir adresin içeriğine erişmek için kullanılır. 
+Dereferans operatörü * işareti ile gösterilir. 
+Örneğin, *ptr ifadesi, ptr işaretçisi tarafından gösterilen bellek adresindeki değeri ifade eder.
+& ve * operatörleri, birlikte kullanıldıklarında, bir değişkenin bellek adresini elde etmek ve o bellek adresindeki değere erişmek için kullanılırlar. 
+Örneğin, *(&x) ifadesi, x değişkeninin bellek adresindeki değeri ifade eder. 
+Ancak, &x ifadesi zaten x değişkeninin bellek adresini ifade ettiği için, bu örnekteki kullanım gereksizdir.
+*/
+/*
 void a_counter(unsigned int i, char *c)
 {
     static int counter = 0;
@@ -49,3 +57,4 @@ int main(void)
     ft_striteri(s, &a_counter);
     return 0;
 }
+*/
