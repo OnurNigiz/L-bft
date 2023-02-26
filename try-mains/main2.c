@@ -50,11 +50,12 @@ int main()
     char dst[] = "Onur";
     char src[] = "Birsu";
 
-    printf("%s", (char *)ft_memcpy(dst, src, 7));
+    printf("%s", (char *)ft_memcpy(dst, src, 2));
     return 0;
     
 }
 */
+
 
 // This is a main for memmove
 /*

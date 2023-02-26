@@ -33,13 +33,6 @@ int main()
 */
 
 // This is a main for ft_striteri
-/* Dereferans operatörü, bellekteki bir adresin içeriğine erişmek için kullanılır. 
-Dereferans operatörü * işareti ile gösterilir. 
-Örneğin, *ptr ifadesi, ptr işaretçisi tarafından gösterilen bellek adresindeki değeri ifade eder.
-& ve * operatörleri, birlikte kullanıldıklarında, bir değişkenin bellek adresini elde etmek ve o bellek adresindeki değere erişmek için kullanılırlar. 
-Örneğin, *(&x) ifadesi, x değişkeninin bellek adresindeki değeri ifade eder. 
-Ancak, &x ifadesi zaten x değişkeninin bellek adresini ifade ettiği için, bu örnekteki kullanım gereksizdir.
-*/
 /*
 void a_counter(unsigned int i, char *c)
 {
@@ -58,3 +51,45 @@ int main(void)
     return 0;
 }
 */
+
+
+// This is a main for ft_itoa
+/*
+int main()
+{
+    printf("%s\n", ft_itoa(123));
+    return 0;
+}
+*/
+
+
+// This is a main for ft_substr
+/*
+int main()
+{
+    char s[] = "Sampiyon Galatasaray";
+	printf("%s", ft_substr(s, 30, ft_strlen("Galatasaray")));      
+    return 0;
+}
+*/
+
+// This is a main for ft_strjoin
+/*
+int main()
+{
+    char s1[] = "Galatasaray ";
+	char s2[] = "Sampiyon";
+	printf("%s\n", ft_strjoin(s1,s2));
+    return 0;
+}
+*/
+
+// This is a main for ft_strtrim
+
+int main()
+{
+    char s1[] = "101011017482421037831001110";
+	char set[] = "10";
+	printf("%s\n", ft_strtrim(s1, set));
+    return 0;
+}
